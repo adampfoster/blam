@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <ul id="services">
+	    <% clients.forEach(function(client){ %>
+		    <li><%= client.firstName %> &lt;<%= client.lastName %>&gt; <%= client.sex %></li>
+		<% }) %>
+	</ul>
+
+  </body>
+</html>
